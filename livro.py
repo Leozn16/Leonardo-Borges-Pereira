@@ -5,7 +5,6 @@ class Livro:
         self._ano = ano
         self._dias_atraso = dias_atraso
 
-    # Métodos getters para acessar os atributos encapsulados
     def get_titulo(self):
         return self._titulo
     
@@ -18,7 +17,6 @@ class Livro:
     def get_dias_atraso(self):
         return self._dias_atraso
     
-    # Método para calcular a multa (será sobrescrito nas subclasses)
     def calcular_multa(self):
         pass
 
@@ -66,7 +64,7 @@ def calcular_multa(livro):
 
 
 def menu():
-    livro = None  # Para armazenar o livro cadastrado
+    livro = None
 
     while True:
         print("\n1. Cadastrar livro")
@@ -88,5 +86,4 @@ def menu():
             print("Opção inválida, tente novamente.")
 
 
-# Executar o menu
 menu()
